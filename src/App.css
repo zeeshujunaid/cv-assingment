@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+.Rangecolor {
+  width: 100%;
+  background-color: red;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #E5E5E5;
+  color: black;
+  font-size: 16px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.resume {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add{
+
+color: black !important;
+
+}
+
+.left-column, .right-column {
+  padding: 20px;
+}
+
+.left-column {
+  flex: 1 1 300px;
+  background-color: #1b72ff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.right-column {
+  flex: 2 1 600px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+  color: #C3C2C2;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.section p, .section ul {
+  margin: 0;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+.bg-color{
+
+background-color: #1b72ff;
+width: 23%;
+color: white;
+border-radius: 10px;
+padding-left: 20px;
+padding-top: 6px;
+height: 25px;
+
+}
+.y{
+
+  padding-left: 0px;
+
+
+}
+.con p{
+
+  padding-right: 20px !important;
+  background-color: red !important;
+  height: 20vh;
+
+}
+.section ul li {
+  /* background-color: #eee; */
+  padding: 7px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item h4 {
+  font-size: 1em;
+  margin: 0;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .left-column, .right-column {
+    flex: 1 1 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .profile-picture img {
+    width: 100px;
+    height: 100px;
   }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .section h3 {
+    font-size: 1.1em;
+  }
+
+  .item h4 {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-picture img {
+    width: 80px;
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .section h3 {
+    font-size: 1em;
+  }
+
+  .item h4 {
+    font-size: 0.8em;
+  }
+
+  .section ul li {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+
+  .bg-color{
+
+    background-color: #1b72ff;
+    width: 60%;
+    color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 6px;
+    height: 25px;
+    
+    }
 }
