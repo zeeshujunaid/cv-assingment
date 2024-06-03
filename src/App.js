@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import profilePicture from "./zeeshan-removebg-preview.png"; // Replace with your profile picture path
+import profilePicture from "./zeeshan-removebg-preview.png";
 
 function App() {
   return (
